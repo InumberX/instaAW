@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+<html lang="ja">
+ <head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#4466b1" />
+  <meta
+   name="description"
+   content="東京都在住のフロントエンドエンジニア：N/NE（ナイン）のポートフォリオ用Webサイトです。このページは、INSTAGRAMから画像情報を取得し表示させます。"
+  />
+  <link rel="canonical" href="https://afterworks.jp/instaaw/" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,11 +25,25 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
+  <title>instaAW | After Works.</title>
+ </head>
+ <body>
+  <div class="wrap-all">
+   <header class="header-wrap">
+    <div class="header-main">
+     <a href="https://afterworks.jp/">
+      <img
+       src="./img/img_logo2.png"
+       alt="After Works."
+      />
+     </a>
+    </div>
+    <!-- /.c-header-main -->
+   </header>
+
+   <main class="main-wrap">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="APP"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +54,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+   </main>
+
+   <footer class="footer-wrap">
+    <div class="pagetop">
+     <a href="#" id="PAGE_TOP"></a>
+    </div>
+    <div class="inner">
+     <small>&copy; <i class="c-year">2017</i> N/NE, All rights reserved.</small>
+    </div>
+   </footer>
+
+   <!-- /.wrap-all -->
+  </div>
+ </body>
 </html>

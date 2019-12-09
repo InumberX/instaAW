@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@media screen and (max-width: 767px) {
+ body {
+  min-width: 0;
+  background: #eee;
+  display: none;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ dl,
+ dt,
+ dd,
+ p,
+ blockquote,
+ ul,
+ ol,
+ li,
+ span {
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: left;
+ }
+ a:active,
+ a:hover {
+  opacity: 1;
+ }
+
+ pc-obj {
+  display: none;
+ }
+ sp-obj {
+  display: block;
+ }
+
+ small {
+  font-size: 12px;
+ }
+
+ /* ヘッダー */
+ .header-wrap {
+  color: #333;
+  background-color: #2b2f30;
+ }
+ .header-main {
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+ }
+ .header-main a {
+  display: block;
+  width: 44%;
+  height: auto;
+  background: #2846a0;
+  text-align: center;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 0 8px;
+ }
+ .header-main a:hover {
+  background: #2846a0;
+  opacity: 1;
+ }
+ .header-main a img {
+  width: 100%;
+  max-width: 170px;
+  max-height: 64px;
+ }
+
+ /* コンテンツ */
+ .inner {
+  padding: 0 4%;
+  width: 100%;
+ }
+
+ .contents-area {
+  background: #fff;
+ }
+
+ #INSTA_AREA {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+ #INSTA_AREA li {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  vertical-align: top;
+ }
+ #INSTA_AREA li .insta-box {
+  background: #eee;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+ }
+ .insta-box .loc-box .loc-name {
+  display: block;
+  padding: 8px 8px 2px;
+  font-size: 14px;
+  color: #333;
+ }
+ .insta-box .loc-box .loc-date {
+  display: block;
+  padding: 8px;
+  font-size: 12px;
+  color: #888;
+ }
+ .insta-box a {
+ }
+ .insta-box a:hover {
+  opacity: 1;
+ }
+ .insta-box img {
+  width: 100%;
+  background-color: #fff;
+ }
+
+ /* フッター */
+ footer .inner {
+  padding: 0;
+ }
+
+ .pagetop a {
+  width: 50px;
+  height: 50px;
+  background-size: 30px;
+ }
+ .pagetop a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+ }
+}
