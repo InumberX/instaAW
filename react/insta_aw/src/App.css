@@ -1,38 +1,118 @@
-.App {
+.insta-image-box {
+ margin-top: 40px;
+}
+
+.insta-image-list {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+.insta-image-list__item {
+ margin: 32px auto 0;
+ padding: 0;
+}
+.insta-image-list > .insta-image-list__item:first-child {
+ margin-top: 0;
+}
+
+.insta-contents {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ flex-wrap: wrap;
+ flex-flow: column-reverse;
+}
+
+.insta-contents__info {
+ width: 100%;
+ box-sizing: border-box;
+}
+.insta-info.-date {
+ display: block;
+ white-space: nowrap;
+ font-size: 1.6rem;
+ font-family: 游明朝, Yu Mincho, YuMincho, Hiragino Mincho ProN,
+  Hiragino Mincho Pro, HGS明朝E, serif, Times, メイリオ, Meiryo;
+ color: #969696;
+ line-height: 1;
+ text-align: right;
+ position: relative;
+ margin: 8px 0 0;
+ padding: 0 0 16px;
+}
+.insta-info.-date:before {
+ content: '';
+ display: block;
+ width: 1px;
+ height: 16px;
+ background-color: #fff;
+ position: absolute;
+ top: -24px;
+ right: 100px;
+}
+.insta-info.-date:after {
+ content: '';
+ display: block;
+ width: 1px;
+ height: 40px;
+ background-color: #969696;
+ position: absolute;
+ top: -8px;
+ right: 100px;
+}
+
+.insta-contents__image {
+ width: 100%;
+ box-sizing: border-box;
  text-align: center;
 }
-
-.App-logo {
- height: 40vmin;
- pointer-events: none;
+.insta-image {
+ width: 100%;
+ max-width: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
- .App-logo {
-  animation: App-logo-spin infinite 3s linear;
+@media screen and (min-width: 768px) {
+ .insta-image-box {
+  margin-top: 64px;
  }
-}
-
-.App-header {
- background-color: #282c34;
- min-height: 100vh;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- font-size: calc(10px + 2vmin);
- color: white;
-}
-
-.App-link {
- color: #61dafb;
-}
-
-@keyframes App-logo-spin {
- from {
-  transform: rotate(0deg);
+ .insta-image-list__item {
+  margin-top: 48px;
  }
- to {
-  transform: rotate(360deg);
+
+ .insta-contents {
+  flex-wrap: nowrap;
+  flex-flow: unset;
+ }
+
+ .insta-contents__info {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ }
+ .insta-info.-date {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+ }
+ .insta-info.-date:before {
+  width: 80px;
+  height: 2px;
+  bottom: -12px;
+  right: -120px;
+  top: auto;
+ }
+ .insta-info.-date:after {
+  width: 160px;
+  height: 2px;
+  bottom: -12px;
+  right: -40px;
+  top: auto;
+ }
+
+ .insta-contents__image {
+  width: 60%;
+  margin-left: 40px;
+  text-align: left;
  }
 }
